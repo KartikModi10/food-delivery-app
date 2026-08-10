@@ -1,5 +1,5 @@
 import React from 'react'
-import { categories } from '../Data/Categories'
+import { categories } from '../../Data/Categories'
 import CategoriesCard from './CategoriesCard'
 const Categories = () => {
     return (

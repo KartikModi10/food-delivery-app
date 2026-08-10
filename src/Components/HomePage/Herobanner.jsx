@@ -1,5 +1,5 @@
 import React from 'react'
-import herobanner from '../assets/heroImage.jpg'
+import herobanner from '../../assets/heroImage.jpg'
 import { CiDiscount1 } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import { FaArrowRightLong } from "react-icons/fa6";
