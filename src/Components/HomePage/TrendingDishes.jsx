@@ -10,8 +10,6 @@ const TrendingDishes = () => {
 
         setRecipes(datas.recipes);
     }
-
-    console.log(recipe)
     useEffect(() => {
         recipes();
     }, [])

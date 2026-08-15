@@ -24,6 +24,7 @@ const PopularResturant = () => {
                     return (
                         <RecipesCards
                             key={recipeItems.id}
+                            id={recipeItems.id}
                             image={recipeItems.image}
                             name={recipeItems.name}
                             rating={recipeItems.rating}
