@@ -1,2 +1,5 @@
 @import "tailwindcss";
 
+.resturantCategory .PopularResturantContent, .resturantCategory .TrendingDishesContent {
+    display: none;
+}

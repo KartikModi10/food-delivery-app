@@ -17,19 +17,21 @@ const TrendingDishes = () => {
         <div className='mt-5'>
             <hr />
             <div className='w-[90%] m-auto pt-3'>
-                <h1 className='text-3xl font-semibold'>Trending dishes this week</h1>
-                <p className='text-s font-light'>Most ordered plates right now</p>
+                <h1 className='TrendingDishesContent text-3xl font-semibold'>Trending dishes this week</h1>
+                <p className='TrendingDishesContent text-s font-light'>Most ordered plates right now</p>
                 <div className='flex flex-wrap gap-2 mt-5'>
                     {
                         recipe.map((recipeItems) => {
                             return (
                                 <TrendingCards
                                     key={recipeItems.id}
+                                    id={recipeItems.id}
                                     image={recipeItems.image}
                                     name={recipeItems.name}
                                     rating={recipeItems.rating}
                                     cuisine={recipeItems.cuisine}
                                     prepTimeMin={recipeItems.prepTimeMinutes}
+                                    caloriesPerServing={recipeItems.caloriesPerServing}
                                 />
                             )
                         })

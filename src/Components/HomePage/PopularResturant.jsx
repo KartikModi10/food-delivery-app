@@ -15,10 +15,11 @@ const PopularResturant = () => {
         getRecipes();
     }, [])
 
+    
     return (
         <div className='w-[90%] m-auto pt-3'>
-            <h1 className='text-3xl font-semibold'>Popular resturants near you</h1>
-            <p className='text-s font-light'>Top-rated kitchens loved by your neighbourhood</p>
+            <h1 className='PopularResturantContent text-3xl font-semibold'>Popular resturants near you</h1>
+            <p className='PopularResturantContent text-s font-light'>Top-rated kitchens loved by your neighbourhood</p>
             <div className='flex flex-wrap gap-2 mt-5'>
                 {recipe.map((recipeItems) => {
                     return (
@@ -30,6 +31,7 @@ const PopularResturant = () => {
                             rating={recipeItems.rating}
                             cuisine={recipeItems.cuisine}
                             prepTimeMin={recipeItems.prepTimeMinutes}
+                            caloriesPerServing={recipeItems.caloriesPerServing}
                         />
                     )
                 })}

@@ -44,7 +44,7 @@ const ResturantPage = () => {
         return item
       });
       setCartItem(updatedCart);
-    }else {setCartItem([...cartItem, {...cardDetail, quantity: 1}]);}
+    }else {setCartItem([...cartItem, {...cardDetail, quantity: num}]);}
     navigate("/cart")
   };
 
@@ -131,7 +131,7 @@ const ResturantPage = () => {
                 ))}
               </ol>
             </div>
-            <button onClick={addToCart} className="mt-10 w-full bg-black hover:bg-orange-500 transition-all duration-300 text-white py-4 rounded-xl text-lg font-semibold">
+            <button onClick={addToCart} className="active:scale-95 transition-transform duration-100 hover:cursor-pointer mt-10 w-full bg-black hover:bg-orange-500 transition-all duration-300 text-white py-4 rounded-xl text-lg font-semibold">
               Add To Cart
             </button>
 
