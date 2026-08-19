@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assets/logo.jpg'
 import { Link, NavLink } from 'react-router-dom'
+import Search from '../NavbarParts/Search'
 
 const Navbar = () => {
     return (
@@ -17,7 +18,8 @@ const Navbar = () => {
                         {/* <NavLink to="/cart">Cart</NavLink> */}
                     </ul>
                     <div className='ml-auto flex items-center gap-10'>
-                        <input type="text" placeholder='Search' className=' border border-[#FF7F00] rounded-full px-5 py-1 w-30 shadow-gray-950' />
+                        <Search/>
+                        
                         <button> Login</button>
                         <NavLink to="/cart">Cart</NavLink>
                     </div>
